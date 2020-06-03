@@ -1,0 +1,183 @@
+<div class="row">
+    <br />
+    <div class="col s12 m7 l7" id="esquerda">
+        <div class="container grey lighten-5">
+            <form name="form_termo" id="form-termo" class="col s12">
+                <h3>Cadastrar e Editar</h3>
+                Os campos marcados com asterísco(*) são obrigatórios&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                        <button class="waves-effect waves-light red darken-1 btn" type='button'
+                            onclick="limparCampos()"><i class="material-icons left">clear</i>Limpar</button>
+                <div class="input-field col s12">
+                    <input id="entrada" type="text" name="entrada" class="validate" required>
+                    <label for="entrada">Entrada*</label>
+                </div>
+                <div class="input-field col s12 " name="genero" name="genero" data-error="Selecione um gênero">
+                    <p>Gênero*</p>
+                    <p>
+                        <label>
+                            <input class="with-gap" name="genero" type="radio" value="m" required>
+                            <span>Masculino</span>
+                        </label>
+                    </p>
+                    <p>
+                        <label>
+                            <input class="with-gap" name="genero" type="radio" value="f" required>
+                            <span>Feminino</span>
+                        </label>
+                    </p>
+                </div>
+
+                <div class="input-field col s12" name="categoria_gramatical"
+                    data-error="Selecione uma categoria gramatical">
+                    <p>Categoria Gramatical*</p>
+                    <p>
+                        <label>
+                            <input class="with-gap" name="categoria_gramatical" type="radio" value="n" required />
+                            <span>Noun</span>
+                        </label>
+                    </p>
+                    <p>
+                        <label>
+                            <input class="with-gap" name="categoria_gramatical" type="radio" value="v" required />
+                            <span>Verbo</span>
+                        </label>
+                    </p>
+                </div>
+
+                <div class="input-field col s12">
+                    <label for="definicao">Definição</label>
+                    <!--<input id="definicao" name='definicao' type="text" class="validate" campo>-->
+                    <textarea id="definicao"  name="definicao" type="text" cols="40" rows="20" class="validate materialize-textarea textarea1"></textarea>
+                </div>
+
+                <div class="input-field col s12">
+                    <input id="fonte_da_definicao"  name='fonte_da_definicao' type="text" class="validate" campo>
+                    <label for="fonte_da_definicao">Fonte da Definição</label>
+                </div>
+
+                <div class="input-field col s12">
+                    <label for="contexto_de_uso">Contexto de Uso</label>
+                    <!--<input id="contexto_de_uso" name='contexto_de_uso' type="text" class="validate" campo>-->
+                    <textarea id="contexto_de_uso"  name="contexto_de_uso" type="text" cols="40" rows="20" class="validate materialize-textarea textarea1"></textarea>
+                </div>
+
+                <div class="input-field col s12">
+                    <label for="fonte_do_contexto_de_uso">Fonte do Contexto de Uso</label>
+                    <input id="fonte_do_contexto_de_uso" name='fonte_do_contexto_de_uso' type="text" class="validate"
+                        campo>
+                </div>
+
+                <div class="input-field col s12">
+                    <label for="termo_ingles">Termo em Inglês</label>
+                    <input id="termo_ingles" name="termo_ingles" type="text" class="validate" campo>
+                </div>
+                <div class="input-field col s12">
+                    <label for="termo_italiano">Termo em Italiano</label>
+                    <input id="termo_italiano" name='termo_italiano' type="text" class="validate" campo>
+                </div>
+
+                <div class="input-field col s12">
+                    <label for="variantes">Variantes</label>
+                    <input id="variantes" type="text" name="variantes" class="validate" campo>
+                </div>
+
+                <div class="input-field col s12">
+                    <label for="remissiva">Remissiva</label>
+                    <input id="remissiva" type="text" name="remissiva" class="validate" campo>
+                </div>
+
+                <div class="input-field col s12">
+                    <p>Área</p>
+                    <p>
+                        <label>
+                            <input class="with-gap" name="area" type="radio" value="Área: Sintoma" />
+                            <span>Sintoma</span>
+                        </label>
+                    </p>
+                    <p>
+                        <label>
+                            <input class="with-gap" name="area" type="radio" value="Área: Tratamento" />
+                            <span>Tratamento</span>
+                        </label>
+                    </p>
+
+                    <p>
+                        <label>
+                            <input class="with-gap" name="area" type="radio" value="Área: Prevenção" />
+                            <span>Prevenção</span>
+                        </label>
+                    </p>
+
+                    <p>
+                        <label>
+                            <input class="with-gap" name="area" type="radio" value="Área: Outro" />
+                            <span>Outro</span>
+                        </label>
+                    </p>
+                    <p>
+                        <label>
+                            <input class="with-gap" name="area" type="radio" value="" />
+                            <span>Não Preencher</span>
+                        </label>
+                    </p>
+                </div>
+
+                <div class="input-field col s12">
+                    <label for="nota">Nota</label>
+                    <!--<input id="nota" type="text" name="nota" class="validate campo">-->
+                    <textarea id="nota" name="nota" type="text" cols="40" rows="20" class="validate materialize-textarea textarea1"></textarea>
+                </div>
+
+                <div class="input-field col s12">
+                    <label for="redator" class="active">Redator</label>
+                    <input id="redator" type="text" name="redator" disabled class="validate" campo>
+                </div>
+
+                <div class="input-field col s12">
+                    <label for="data_de_registro" class="active">Data de Registro(Ano-Mês-Dia)</label>
+                    <input id="data_de_registro" type="text" name="data_de_registro" disabled class="validate" campo>
+                </div>
+
+                <div class="row">
+                    <div class="col s6 m6 l6">
+                        <button id='btn-salvar' class="waves-effect waves-light btn" onclick="armazenarTermo(FormData)"
+                            type="button">Salvar</button>
+                                 <!-- início preloader -->
+                        <div id="preloader" class="preloader-wrapper small active" style='display: none'>
+                            <div class="spinner-layer spinner-green-only">
+                                <div class="circle-clipper left">
+                                    <div class="circle"></div>
+                                </div>
+                                <div class="gap-patch">
+                                    <div class="circle"></div>
+                                </div>
+                                <div class="circle-clipper right">
+                                    <div class="circle"></div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- fim preloader -->
+                    </div>
+                    <div class="col s6 m6 l6">
+                        <button class="waves-effect waves-light red darken-1 btn" type='button'
+                            onclick="limparCampos()"><i class="material-icons left">clear</i>Limpar</button>
+                    </div>
+                </div>
+
+            </form>
+        </div>
+    </div>
+
+    <div class="col s12 m5 l5">
+        <div class="container grey lighten-4">
+
+            <h3>Editar e Deletar</h3>
+
+            <span id="total-de-termos"></span>
+
+            <ul id="lista-termos">
+            </ul>
+        </div>
+    </div>
+
+</div>

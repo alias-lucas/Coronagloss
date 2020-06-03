@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Document</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Baloo+Paaji+2&family=Oswald:wght@400;600&display=swap"
+        rel="stylesheet">
+    <!--MATERIALIZE materialize.css-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <link type="text/css" rel="stylesheet" href="" />
+    <!-- CSS Personalizado -->
+    <link rel="stylesheet" href="./css/index.css">
+</head>
+
+<body>
+    <!-- MENU/BARRA DO TOPO -->
+    <div class="navbar-fixed z-depth-1">
+        <nav>
+            <div id="menu-fixo" class="nav-wrapper">
+                <span id="titulo">Glossário Terminológico da COVID-19</span>
+            </div>
+        </nav>
+    </div>
+    <main>
+        <div id="app">
+            <div class="container grey lighten-3 z-depth-1"
+                style="width: 350px; height: 350px; padding: 20px; text-align: center; margin-top: 50px">
+                <form name="form_autenticacao">
+                    <label for="login" style="color: #212121; font-size: 20px">Usuário</label>
+                    <input id="login" name="campo_login" type="text" required>
+                    <label for="senha" style="color: #212121; font-size: 20px">Senha</label>
+                    <input id="senha" name="campo_senha" type="password" required>
+                    <button id="btn-salvar"class="waves-effect waves-light btn" type="button" onclick="autenticar(event)"
+                        style="margin-top: 25px">Acessar</button>
+                        <div id="preloader" class="preloader-wrapper small active" style='display: none'>
+                            <div class="spinner-layer spinner-green-only">
+                                <div class="circle-clipper left">
+                                    <div class="circle"></div>
+                                </div>
+                                <div class="gap-patch">
+                                    <div class="circle"></div>
+                                </div>
+                                <div class="circle-clipper right">
+                                    <div class="circle"></div>
+                                </div>
+                            </div>
+                        </div>
+                </form>
+            </div>
+        </div>
+    </main>
+
+    <footer id="fim" class="footer-copyright">
+        <p>Desenvolvido pela Codamais © 2020</p>
+    </footer>
+
+</body>
+<!-- IMPORT JQUERY -->
+<script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+<!--MATERIALIZE JavaScript-->
+<script type="text/javascript" src="./js/materialize.min.js"></script>
+<!-- funcionamento do form -->
+<script src="./js/index.js"></script>
+<script>
+      $('.textarea1').val('New Text');
+      $('.textarea1').trigger('autoresize');
+</script>
+
+
+</html>

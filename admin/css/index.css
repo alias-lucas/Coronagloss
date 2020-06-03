@@ -1,0 +1,101 @@
+body {
+    font-family: "Baloo Paaji 2", cursive;
+    display: flex;
+    min-height: 100vh;
+    flex-direction: column;
+}
+main {
+    flex: 1 0 auto;
+}
+h3 {
+    font-family: "Oswald", sans-serif;
+    font-weight: 600;
+    font-size: 2em;
+    margin: 0px;
+}
+
+/* MENU */
+#menu-fixo {
+    background-color: dodgerblue;
+}
+#titulo {
+    margin-left: 20px;
+    font-family: "Oswald", sans-serif;
+    font-weight: 600;
+    font-size: 2em;
+}
+/* FIM DO MENU */
+
+/* ESQUERDA */
+#esquerda {
+    border-right: solid 1px lightgrey;
+}
+
+/* FIM DA ESQUERDA */
+
+/* DIREITA */
+
+/* PALAVRAS */
+
+/* FIM DA DIREITA */
+
+/* FOOTER */
+#fim {
+    text-align: center;
+    background-color: dodgerblue;
+    font-family: "Oswald", sans-serif;
+    font-weight: 400;
+}
+
+/* ul li div span button {
+    position: absolute;
+    margin-left: 90%;   
+} */
+
+.radioWarning {
+    border: solid red 1px;
+}
+.radioMessage {
+    margin: 5px 0 0 20px;
+}
+/* campo editar e alterar termo */
+ul#lista-termos {
+    height: 700px;
+    overflow: auto;
+}
+/*  */
+
+/* cards de cada termo*/
+ul#lista-termos > li > div.card-panel {
+    margin: 15px;
+    padding: 8px;
+    transition: all 0.3s;
+}
+/* botão dos cards de cada termo  */
+ul#lista-termos > li > div.card-panel > div {
+    /* margin: 15px; */
+    padding: 0;
+}
+
+/* botão dos cards de cada termo  */
+ul#lista-termos > li > div.card-panel:hover {
+    transform: scale(1.03);
+}
+
+/* zoom dos campos do card ao clicar no termo */
+ul#lista-termos > li > div.card-panel > span {
+    transition: all 0.05s;
+}
+ul#lista-termos > li > div.card-panel > span:active {
+    transform: scale(0.8);
+}
+/* campo de redator */
+#redator {
+    font-size: 17px;
+    font-weight: bold;
+}
+
+/* animação */
+#form-termo {
+    transition: all 0.3s;
+}

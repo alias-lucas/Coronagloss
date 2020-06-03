@@ -1,0 +1,40 @@
+{
+  "name": "projeto_coronavirus",
+  "version": "1.0.0",
+  "description": "Nos trexos de código e explicação a seguir irei dar uma breve explicação \r do que o sistema faz, como ele está dividido e um pouco de como \r o sequelize funciona. Para isso iremos divir em **3** tópicos\r sendo eles: **instalção**, **sequelize** e **organização das pastas**.\r Vamos lá !!",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "nodemon .\\src\\server.js",
+    "start" : "node src/server.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "cookie-parser": "^1.4.5",
+    "cors": "^2.8.5",
+    "dotenv-safe": "^8.2.0",
+    "express": "^4.17.1",
+    "express-formidable": "^1.2.0",
+    "express-session": "^1.17.1",
+    "jsonwebtoken": "^8.5.1",
+    "materialize-css": "^1.0.0-rc.2",
+    "mysql2": "^2.1.0",
+    "pg": "^8.0.3",
+    "pg-hstore": "^2.3.3",
+    "sequelize": "^5.21.7"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.3",
+    "sequelize-cli": "^5.5.1"
+  },
+  "bugs": {
+    "url": "https://github.com/DeoRetr0/coronagloss/issues"
+  },
+  "homepage": "https://github.com/DeoRetr0/coronagloss#readme",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/DeoRetr0/coronagloss.git"
+  }
+}
