@@ -13,10 +13,14 @@ class Termo extends Model {
             fonte_do_contexto_de_uso: DataTypes.STRING,
             genero: DataTypes.STRING,
             nota: DataTypes.STRING,
+            nota2: DataTypes.STRING,
             redator: DataTypes.STRING,
             remissiva: DataTypes.STRING,
             termo_ingles: DataTypes.STRING,
             termo_italiano: DataTypes.STRING,
+            termo_espanhol: DataTypes.STRING,
+            termo_frances: DataTypes.STRING,
+            termo_alemao: DataTypes.STRING,
             variantes: DataTypes.STRING,
         }, {
             sequelize

@@ -49,6 +49,10 @@ module.exports = {
         type: Sequelize.STRING,
         allowNull: false,
       },
+      nota2: {
+        type: Sequelize.STRING,
+        allowNull: false,
+      },
       redator: {
         type: Sequelize.STRING,
         allowNull: false,
@@ -62,6 +66,18 @@ module.exports = {
         allowNull: false,
       },
       termo_italiano: {
+        type: Sequelize.STRING,
+        allowNull: false,
+      },
+      termo_espanhol: {
+        type: Sequelize.STRING,
+        allowNull: false,
+      },
+      termo_frances: {
+        type: Sequelize.STRING,
+        allowNull: false,
+      },
+      termo_alemao: {
         type: Sequelize.STRING,
         allowNull: false,
       },

@@ -131,6 +131,9 @@ function armazenarTermo() {
             entrada: form_termo.entrada.value,
             termo_ingles: form_termo.termo_ingles.value,
             termo_italiano: form_termo.termo_italiano.value,
+            termo_espanhol: form_termo.termo_espanhol.value,
+            termo_frances: form_termo.termo_frances.value,
+            termo_alemao: form_termo.termo_alemao.value,
             categoria_gramatical: form_termo.categoria_gramatical.value,
             definicao: form_termo.definicao.value,
             fonte_da_definicao: form_termo.fonte_da_definicao.value,
@@ -138,6 +141,7 @@ function armazenarTermo() {
             fonte_do_contexto_de_uso: form_termo.fonte_do_contexto_de_uso.value,
             genero: form_termo.genero.value,
             nota: form_termo.nota.value,
+            nota2: form_termo.nota2.value,
             redator: userName,
             remissiva: form_termo.remissiva.value,
             variantes: form_termo.variantes.value,
@@ -198,20 +202,24 @@ function preencherCampos(elemento) {
         let termo_buscado = data[0]
         form_termo = document.forms['form_termo']
 
-        form_termo.area.value = termo_buscado.area
-        form_termo.entrada.value = termo_buscado.entrada
-        form_termo.termo_ingles.value = termo_buscado.termo_ingles
-        form_termo.termo_italiano.value = termo_buscado.termo_italiano
-        form_termo.categoria_gramatical.value = termo_buscado.categoria_gramatical
-        form_termo.fonte_da_definicao.value = termo_buscado.fonte_da_definicao
-        form_termo.contexto_de_uso.value = termo_buscado.contexto_de_uso
-        form_termo.fonte_do_contexto_de_uso.value = termo_buscado.fonte_do_contexto_de_uso
-        form_termo.genero.value = termo_buscado.genero
-        form_termo.nota.value = termo_buscado.nota
-        form_termo.redator.value = termo_buscado.redator
-        form_termo.remissiva.value = termo_buscado.remissiva
-        form_termo.variantes.value = termo_buscado.variantes
-        form_termo.definicao.value = termo_buscado.definicao
+        form_termo.area.value = termo_buscado.area,
+        form_termo.entrada.value = termo_buscado.entrada,
+        form_termo.termo_ingles.value = termo_buscado.termo_ingles,
+        form_termo.termo_italiano.value = termo_buscado.termo_italiano,
+        form_termo.termo_espanhol.value = termo_buscado.termo_espanhol,
+        form_termo.termo_frances.value = termo_buscado.termo_frances,
+        form_termo.termo_alemao.value = termo_buscado.termo_alemao,
+        form_termo.categoria_gramatical.value = termo_buscado.categoria_gramatical,
+        form_termo.fonte_da_definicao.value = termo_buscado.fonte_da_definicao,
+        form_termo.contexto_de_uso.value = termo_buscado.contexto_de_uso,
+        form_termo.fonte_do_contexto_de_uso.value = termo_buscado.fonte_do_contexto_de_uso,
+        form_termo.genero.value = termo_buscado.genero,
+        form_termo.nota.value = termo_buscado.nota,
+        form_termo.nota2.value = termo_buscado.nota2,
+        form_termo.redator.value = termo_buscado.redator,
+        form_termo.remissiva.value = termo_buscado.remissiva,
+        form_termo.variantes.value = termo_buscado.variantes,
+        form_termo.definicao.value = termo_buscado.definicao,
         form_termo.nota.value = termo_buscado.nota
         // formatando a data para mostrar apenas dia/mes/ano
         let dataHoje = termo_buscado.createdAt
@@ -253,6 +261,9 @@ function atualizarTermo() {
             entrada: form_termo.entrada.value,
             termo_ingles:form_termo.termo_ingles.value,
             termo_italiano:form_termo.termo_italiano.value,
+            termo_espanhol:form_termo.termo_espanhol.value,
+            termo_frances:form_termo.termo_frances.value,
+            termo_alemao:form_termo.termo_alemao.value,
             categoria_gramatical: form_termo.categoria_gramatical.value,
             definicao: form_termo.definicao.value,
             fonte_da_definicao: form_termo.fonte_da_definicao.value,
@@ -260,6 +271,7 @@ function atualizarTermo() {
             fonte_do_contexto_de_uso: form_termo.fonte_do_contexto_de_uso.value,
             genero: form_termo.genero.value,
             nota: form_termo.nota.value,
+            nota2: form_termo.nota2.value,
             redator: form_termo.redator.value,
             remissiva: form_termo.remissiva.value,
             variantes: form_termo.variantes.value,
@@ -363,6 +375,9 @@ function limparCampos() {
         form_termo.entrada.value = '',
         form_termo.termo_ingles.value = '',
         form_termo.termo_italiano.value = '',
+        form_termo.termo_espanhol.value = '',
+        form_termo.termo_frances.value = '',
+        form_termo.termo_alemao.value = '',
         form_termo.categoria_gramatical.value = '',
         form_termo.definicao.value = '',
         form_termo.fonte_da_definicao.value = '',
@@ -370,6 +385,7 @@ function limparCampos() {
         form_termo.fonte_do_contexto_de_uso.value = '',
         form_termo.genero.value = '',
         form_termo.nota.value = '',
+        form_termo.nota2.value = '',
     form_termo.remissiva.value = '',
         form_termo.variantes.value = '',
         
